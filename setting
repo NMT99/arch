@@ -27,7 +27,7 @@ pacman -S --needed base-devel ;
 # install yay
 git clone https://aur.archlinux.org/yay.git ;
 cd yay/ ;
-makepkg -si ;
+makepkg -si --noconfirm ;
 #umount -R /mnt
 #reboot
 # mkswap /dev/sdb3
