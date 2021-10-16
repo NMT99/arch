@@ -20,6 +20,7 @@ grub-install --target=x86_64-efi --bootloader-id=$bname --efi-directory=/boot/ef
 #another way : grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg ;
 pacman -S networkmanager --noconfirm ;
+pacman -S bash-completion --noconfirm ;
 systemctl enable NetworkManager ;
 #umount -R /mnt
 #reboot
