@@ -1,10 +1,10 @@
 #-----2-------
 timedatectl set-timezone Asia/Ho_Chi_Minh ;
-echo "en_US.UTF-8 UTF-8" >> ~/etc/locale.gen ;
+echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen ;
 locale-gen ;
-echo "LANG=en_US.UTF-8" > ~/etc/locale.conf ;
+echo "LANG=en_US.UTF-8" > /etc/locale.conf ;
 export LANG=en_US.UTF-8 ;
-echo ea > ~/etc/hostname ;
+echo ea > /etc/hostname ;
 echo '127.0.0.1  localhost
 ::1	localhost
-127.0.1.1	ea.localhost' >> ~/etc/hosts ;
+127.0.1.1	ea.localhost' >> /etc/hosts ;
