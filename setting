@@ -15,7 +15,7 @@ mkdir /boot/efi ;
 lsblk ;
 read -p "Enter your boot partitions( sda1 or sdb1,..):" boot ;
 mount /dev/$boot /boot/efi ;
-read -p "Enter your bootloader name( sda1 or sdb1,..):" bname ;
+read -p "Enter your bootloader name( GRUB or Arch,..):" bname ;
 grub-install --target=x86_64-efi --bootloader-id=$bname --efi-directory=/boot/efi ;
 #another way : grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg ;
