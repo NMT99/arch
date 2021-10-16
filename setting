@@ -12,7 +12,9 @@ echo 'Enter passphrase for root:" ;
 passwd ;
 pacman -S grub efibootmgr ;
 mkdir /boot/efi ;
-mount /dev/sda1 /boot/efi ;
+read -p "Enter your boot partitions( sda1 or sdb1,..):" boot ;
+mount /dev/$boot /boot/efi ;
+read -p "Enter your bootloader name( sda1 or sdb1,..):" boot ;
 grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 pacman -S networkmanager
