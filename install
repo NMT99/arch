@@ -14,6 +14,6 @@ mount /dev/$data /mnt ;
 pacstrap /mnt base linux linux-firmware sudo nano ;
 genfstab -U /mnt >> /mnt/etc/fstab ;
 #------------
-arch-chroot /mnt /bin/bash | timedatectl set-timezone Asia/Ho_Chi_Minh ;
+arch-chroot /mnt /bin/bash ;
 #timedatectl set-timezone Asia/Ho_Chi_Minh ;
 #--------
