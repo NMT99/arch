@@ -10,7 +10,7 @@ echo '127.0.0.1  localhost
 127.0.1.1	ea.localhost' >> /etc/hosts ;
 echo "Enter passphrase for root:" ;
 passwd ;
-pacman -S grub efibootmgr ;
+pacman -S grub efibootmgr --noconfirm ;
 mkdir /boot/efi ;
 lsblk ;
 read -p "Enter your boot partitions( sda1 or sdb1,..):" boot ;
@@ -18,7 +18,7 @@ mount /dev/$boot /boot/efi ;
 read -p "Enter your bootloader name( sda1 or sdb1,..):" bname ;
 grub-install --target=x86_64-efi --bootloader-id=$bname --efi-directory=/boot/efi ;
 grub-mkconfig -o /boot/grub/grub.cfg ;
-pacman -S networkmanager ;
+pacman -S networkmanager --noconfirm ;
 systemctl enable NetworkManager ;
 #umount -R /mnt
 #reboot
