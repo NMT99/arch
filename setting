@@ -8,3 +8,20 @@ echo ea > /etc/hostname ;
 echo '127.0.0.1  localhost
 ::1	localhost
 127.0.1.1	ea.localhost' >> /etc/hosts ;
+echo 'Enter passphrase for root:" ;
+passwd ;
+pacman -S grub efibootmgr ;
+mkdir /boot/efi ;
+mount /dev/sda1 /boot/efi ;
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
+grub-mkconfig -o /boot/grub/grub.cfg
+pacman -S networkmanager
+systemctl enable NetworkManager
+exit
+umount -R /mnt
+reboot
+# mkswap /dev/sdb3
+# swapon /dev/swap partition
+usermod -aG wheel tu
+useradd -m tu -G wheel
+passwd tu
