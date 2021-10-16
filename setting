@@ -19,9 +19,15 @@ read -p "Enter your bootloader name( GRUB or Arch,..):" bname ;
 grub-install --target=x86_64-efi --bootloader-id=$bname --efi-directory=/boot/efi ;
 #another way : grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg ;
+#install some apps
 pacman -S networkmanager --noconfirm ;
-pacman -S bash-completion --noconfirm ;
 systemctl enable NetworkManager ;
+pacman -S bash-completion --noconfirm ;
+pacman -S --needed base-devel ;
+# install yay
+git clone https://aur.archlinux.org/yay.git ;
+cd yay/ ;
+makepkg -si ;
 #umount -R /mnt
 #reboot
 # mkswap /dev/sdb3
