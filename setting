@@ -28,6 +28,7 @@ systemctl enable NetworkManager ;
 read -p "Enter a user:" user1 ;
 useradd -m $user1  ;
 usermod -aG wheel $user1 ;
+echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers ;
 #--useradd -m $user1 -G wheel ;-- bi du ko can thiet
 echo "Enter password for user:" ;
 passwd $user1 ;
