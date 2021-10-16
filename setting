@@ -8,7 +8,7 @@ echo ea > /etc/hostname ;
 echo '127.0.0.1  localhost
 ::1	localhost
 127.0.1.1	ea.localhost' >> /etc/hosts ;
-echo 'Enter passphrase for root:" ;
+echo "Enter passphrase for root:" ;
 passwd ;
 pacman -S grub efibootmgr ;
 mkdir /boot/efi ;
