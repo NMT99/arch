@@ -13,7 +13,7 @@ mount /dev/$data /mnt ;
 pacstrap /mnt base linux linux-firmware sudo nano ;
 genfstab -U /mnt >> /mnt/etc/fstab ;
 #------------
-arch-chroot /mnt /bin/bash ;
+arch-chroot /mnt /bin/bash | timedatectl set-timezone Asia/Ho_Chi_Minh && ip a;
 timedatectl set-timezone Asia/Ho_Chi_Minh ;
 echo "en_US.UTF-8 UTF-8" >> ~/etc/locale.gen ;
 locale-gen ;
