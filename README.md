@@ -12,4 +12,5 @@ sh install
 when install done ,to countinue run :
 
 sh setting 
+
 and follow installation.
