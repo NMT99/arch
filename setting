@@ -14,16 +14,22 @@ pacman -S grub efibootmgr ;
 mkdir /boot/efi ;
 read -p "Enter your boot partitions( sda1 or sdb1,..):" boot ;
 mount /dev/$boot /boot/efi ;
-read -p "Enter your bootloader name( sda1 or sdb1,..):" boot ;
-grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
-grub-mkconfig -o /boot/grub/grub.cfg
-pacman -S networkmanager
-systemctl enable NetworkManager
-exit
-umount -R /mnt
-reboot
+read -p "Enter your bootloader name( sda1 or sdb1,..):" bname ;
+grub-install --target=x86_64-efi --bootloader-id=$bname --efi-directory=/boot/efi ;
+grub-mkconfig -o /boot/grub/grub.cfg ;
+pacman -S networkmanager ;
+systemctl enable NetworkManager ;
+#umount -R /mnt
+#reboot
 # mkswap /dev/sdb3
 # swapon /dev/swap partition
-usermod -aG wheel tu
-useradd -m tu -G wheel
-passwd tu
+read -p "Enter a user:" user1 ;
+useradd -m $user1  ;
+usermod -aG wheel $user1 ;
+useradd -m $user1 -G wheel ;
+read -p "Enter password for user:" ;
+passwd $user1 ;
+echo "User $user1 was added to wheel group !" ;
+echo "# umount -R /mnt" ;
+echo "Installation succeeded ! You can un mount /mnt and reboot installation" && sleep 3 ;
+exit ;
