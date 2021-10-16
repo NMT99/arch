@@ -29,7 +29,7 @@ read -p "Enter a user:" user1 ;
 useradd -m $user1  ;
 usermod -aG wheel $user1 ;
 #--useradd -m $user1 -G wheel ;-- bi du ko can thiet
-read -p "Enter password for user:" ;
+echo "Enter password for user:" ;
 passwd $user1 ;
 echo "User $user1 was added to wheel group !" ;
 echo "# umount -R /mnt" ;
