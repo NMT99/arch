@@ -42,3 +42,20 @@ pacman -S --needed plasma
 ###########3
 pacman -S xorg plasma plasma-wayland-session kde-applications
 systemctl enable sddm.service
+####sudo pacman -Syyu
+# install xorg server
+ 
+sudo pacman -S xorg-server xorg-server-utils xorg-xinit mesa
+# install Driver for laptop
+ 
+sudo pacman -S xf86-input-synaptics
+# fix alway mute sound
+sudo pacman -S alsa-utils
+alsamixer Sset Master unmute
+# install NetworkManager
+pacman -S NetworkManager
+sudo systemctl stop dhcpcd.service
+sudo systemctl disable dhcpcd.service
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service
+#######3
