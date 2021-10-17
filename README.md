@@ -1,5 +1,5 @@
 # EFI arch installer by NMT99
-pacman -Sy git 
+pacman -Sy git --noconfirm
 
 git clone https://github.com/NMT99/arch.git
 
