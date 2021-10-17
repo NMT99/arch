@@ -23,7 +23,7 @@ grub-mkconfig -o /boot/grub/grub.cfg ;
 pacman -S networkmanager --noconfirm ;
 systemctl enable NetworkManager ;
 pacman -S bash-completion --noconfirm ;
-pacman -S --needed base-devel ;
+pacman -S --needed base-devel --noconfirm ;
 # install yay
 git clone https://aur.archlinux.org/yay.git ;
 cd yay/ ;
