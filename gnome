@@ -18,3 +18,5 @@
    25  sudo pacman -S bash-completion
    26  exit
    27  sudo systemctl enable gdm
+   
+   sudo pacman -S pulseaudio pulseaudio-alsa
