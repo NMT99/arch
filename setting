@@ -24,17 +24,6 @@ pacman -S networkmanager --noconfirm ;
 systemctl enable NetworkManager ;
 pacman -S bash-completion --noconfirm ;
 pacman -S --needed base-devel --noconfirm ;
-# install yay
-git clone https://aur.archlinux.org/yay.git ;
-cd yay/ ;
-makepkg -si --noconfirm ;
-# install snapd
-cd ~/ ;
-git clone https://aur.archlinux.org/snapd.git ;
-cd snapd/ && makepkg -si --noconfirm ;
-systemctl enable --now snapd.socket ;
-ln -s /var/lib/snapd/snap /snap ;
-# OK snap and yay are ready !
 #umount -R /mnt
 #reboot
 # mkswap /dev/sdb3
