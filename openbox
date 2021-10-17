@@ -8,7 +8,7 @@ cp /etc/X11/xinit/xinitrc ~/.xinitrc
 startx
 mkdir -p ~/.config/openbox
 cp /etc/xdg/openbox/* ~/.config/openbox/
-sudo pacman -S obconf menumaker tint2 plank notrogen ,...
+sudo pacman -S obconf menumaker tint2 plank nitrogen ,...archlinux-wallpaper
 ##audio
 sudo pacman -S pulseaudio pulseaudio-alsa
 sudo snap install vlc
