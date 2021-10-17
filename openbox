@@ -12,3 +12,6 @@ sudo pacman -S obconf menumaker tint2 plank notrogen ,...
 ##audio
 sudo pacman -S pulseaudio pulseaudio-alsa
 sudo snap install vlc
+###auto .config/openbox/autostart:
+nitrogen --restore &
+tint2 &
