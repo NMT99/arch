@@ -31,6 +31,7 @@ xf86-video-intel
 ###sudo pacman -S virtualbox-guest-utils  neu dung virtualbox
 #https://www.linuxbabe.com/virtualbox/install-arch-linux-uefi-hardware-virtualbox#
 ###https://blog.desdelinux.net/en/openbox-installation-on-arch-linux/####333
+####https://medium.com/@minhkhi_40909/m%C3%ACnh-%C4%91%C3%A3-setup-arch-linux-nh%C6%B0-th%E1%BA%BF-n%C3%A0o-part-1-83f4d07efde8 ########
 #########lxdm
  sudo pacman -S openbox obconf menumaker xterm terminator pcmanfm tint2 picom plank xorg nitrogen gnome-backgrounds lxappearance lxhotkey
    12  sudo pacman -S lxdm
