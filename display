@@ -37,3 +37,6 @@ xf86-video-intel
    13  sudo systemctl enable lsdm
    14  sudo systemctl enable lxdm
 ##########33
+pacman -S --needed xorg sddm
+pacman -S --needed plasma
+###########3
