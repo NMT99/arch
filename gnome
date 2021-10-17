@@ -1,0 +1,20 @@
+8  sudo pacman -Sy
+    9  sudo pacman -S xf86-video-intel
+   10  sudo pacman -S nvidia-utils
+   11  sudo pacman -S nvidia nvidia-utils
+   12  sudo pacman -S xorg
+   13  sudo pacman -S gdm
+   14  sudo pacman -S gnome gnome-extra
+   15  vim videocard
+   16  vim videocards
+   17  lscpi
+   18  lscpi
+   19  lspci
+   20  vim videocards
+   21  nano videocards
+   22  sudo pacman -S nvidia nvidia-settings
+   23  sudo pacman -S nvidia-settings
+   24  sudo systemctl enable gdm
+   25  sudo pacman -S bash-completion
+   26  exit
+   27  sudo systemctl enable gdm
