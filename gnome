@@ -30,3 +30,9 @@ sudo pacman -S xorg-server xorg-xinit
 xf86-video-intel
 ###sudo pacman -S virtualbox-guest-utils  neu dung virtualbox
 #https://www.linuxbabe.com/virtualbox/install-arch-linux-uefi-hardware-virtualbox#
+#########lxdm
+ sudo pacman -S openbox obconf menumaker xterm terminator pcmanfm tint2 picom plank xorg nitrogen gnome-backgrounds lxappearance lxhotkey
+   12  sudo pacman -S lxdm
+   13  sudo systemctl enable lsdm
+   14  sudo systemctl enable lxdm
+##########33
