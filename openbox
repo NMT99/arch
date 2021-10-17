@@ -9,7 +9,7 @@ nano .xinitrc
 startx
 mkdir -p ~/.config/openbox
 cp /etc/xdg/openbox/* ~/.config/openbox/
-sudo pacman -S obconf menumaker tint2 plank nitrogen ,...archlinux-wallpaper
+sudo pacman -S obconf menumaker tint2 plank nitrogen pcmanfm ,...archlinux-wallpaper
 ##audio
 sudo pacman -S pulseaudio pulseaudio-alsa
 sudo snap install vlc
