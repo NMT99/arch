@@ -1,9 +1,10 @@
 sudo pacman -S xorg-server xorg-xinit mesa virtualbox-guest-utils xorg-twm xorg-xclock xterm
 startx
-nano .xinitrc
+
 sudo pacman -S openbox
 sudo pacman -S ttf-dejavu ttf-liberation
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
+nano .xinitrc
 # nano .xinitrc , #### 5 dong cuoi , them vao exec openbox-session
 startx
 mkdir -p ~/.config/openbox
