@@ -1,4 +1,7 @@
 8  sudo pacman -Sy
+#######33
+sudo pacman -S xorg-server xorg-xinit
+#######33
     9  sudo pacman -S xf86-video-intel
    10  sudo pacman -S nvidia-utils
    11  sudo pacman -S nvidia nvidia-utils
