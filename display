@@ -40,3 +40,5 @@ xf86-video-intel
 pacman -S --needed xorg sddm
 pacman -S --needed plasma
 ###########3
+pacman -S xorg plasma plasma-wayland-session kde-applications
+systemctl enable sddm.service
