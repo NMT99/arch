@@ -20,3 +20,4 @@
    27  sudo systemctl enable gdm
    
    sudo pacman -S pulseaudio pulseaudio-alsa
+   sudo pacman -Sy archlinux-wallpaper
