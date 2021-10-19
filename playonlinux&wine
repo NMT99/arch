@@ -1,0 +1,14 @@
+ 
+sudo pacman -S zenity 
+sudo pacman -S krb5 samba
+
+
+
+cd .wine/
+mkdir office2013
+WINEPREFIX=~/.wine/office2013/ WINEARCH=win32/ winetricks 
+cd /media/
+WINEPREFIX=~/.wine/office2013 WINEARCH=win32 wine ./Setup.exe
+
+###nvidia
+bumblebee + optimus-manager + optimus-manager-qt
