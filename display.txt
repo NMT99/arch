@@ -34,6 +34,9 @@ xf86-video-intel
 ####https://medium.com/@minhkhi_40909/m%C3%ACnh-%C4%91%C3%A3-setup-arch-linux-nh%C6%B0-th%E1%BA%BF-n%C3%A0o-part-1-83f4d07efde8 ########
 ###https://www.reddit.com/r/ManjaroLinux/comments/k76cph/telegram_not_launching_from_the_browser_xdgopen/ghxryq0/ 
 #########lxdm
+####33https://youtu.be/vTakHpggAMs
+
+
  sudo pacman -S openbox obconf menumaker xterm terminator pcmanfm tint2 picom plank xorg nitrogen gnome-backgrounds lxappearance lxhotkey
    12  sudo pacman -S lxdm
    13  sudo systemctl enable lsdm
