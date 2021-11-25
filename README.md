@@ -1,4 +1,4 @@
-# EFI arch installer by NMT99
+# EFI arch installer UEFI by NMT99
 #
 
 pacman -Sy git 
