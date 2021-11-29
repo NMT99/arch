@@ -12,4 +12,6 @@ sudo systemctl enable --now snapd.socket ;
 sudo ln -s /var/lib/snapd/snap /snap ;
 # OK snap and yay are ready !
 echo Openssh will be install ! ;
-sudo pacman -S openssh
+sudo pacman -S openssh --noconfirm ;
+sudo systemctl enable sshd.service ;
+sudo systemctl start sshd.service ;
